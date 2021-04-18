@@ -29,6 +29,7 @@ namespace KolkoiKrzyzyk
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.A1 = new System.Windows.Forms.Button();
             this.A2 = new System.Windows.Forms.Button();
             this.A3 = new System.Windows.Forms.Button();
@@ -77,7 +78,7 @@ namespace KolkoiKrzyzyk
             // B1
             // 
             this.B1.Font = new System.Drawing.Font("Verdana", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.B1.Location = new System.Drawing.Point(3, 81);
+            this.B1.Location = new System.Drawing.Point(3, 82);
             this.B1.Name = "B1";
             this.B1.Size = new System.Drawing.Size(72, 72);
             this.B1.TabIndex = 3;
@@ -87,7 +88,7 @@ namespace KolkoiKrzyzyk
             // B2
             // 
             this.B2.Font = new System.Drawing.Font("Verdana", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.B2.Location = new System.Drawing.Point(81, 81);
+            this.B2.Location = new System.Drawing.Point(81, 82);
             this.B2.Name = "B2";
             this.B2.Size = new System.Drawing.Size(72, 72);
             this.B2.TabIndex = 4;
@@ -97,7 +98,7 @@ namespace KolkoiKrzyzyk
             // B3
             // 
             this.B3.Font = new System.Drawing.Font("Verdana", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.B3.Location = new System.Drawing.Point(159, 81);
+            this.B3.Location = new System.Drawing.Point(159, 82);
             this.B3.Name = "B3";
             this.B3.Size = new System.Drawing.Size(73, 72);
             this.B3.TabIndex = 5;
@@ -107,9 +108,9 @@ namespace KolkoiKrzyzyk
             // C1
             // 
             this.C1.Font = new System.Drawing.Font("Verdana", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.C1.Location = new System.Drawing.Point(3, 159);
+            this.C1.Location = new System.Drawing.Point(3, 161);
             this.C1.Name = "C1";
-            this.C1.Size = new System.Drawing.Size(72, 75);
+            this.C1.Size = new System.Drawing.Size(72, 72);
             this.C1.TabIndex = 6;
             this.C1.UseVisualStyleBackColor = true;
             this.C1.Click += new System.EventHandler(this.Mark);
@@ -117,9 +118,9 @@ namespace KolkoiKrzyzyk
             // C2
             // 
             this.C2.Font = new System.Drawing.Font("Verdana", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.C2.Location = new System.Drawing.Point(81, 159);
+            this.C2.Location = new System.Drawing.Point(81, 161);
             this.C2.Name = "C2";
-            this.C2.Size = new System.Drawing.Size(72, 75);
+            this.C2.Size = new System.Drawing.Size(72, 72);
             this.C2.TabIndex = 7;
             this.C2.UseVisualStyleBackColor = true;
             this.C2.Click += new System.EventHandler(this.Mark);
@@ -127,9 +128,9 @@ namespace KolkoiKrzyzyk
             // C3
             // 
             this.C3.Font = new System.Drawing.Font("Verdana", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.C3.Location = new System.Drawing.Point(159, 159);
+            this.C3.Location = new System.Drawing.Point(159, 161);
             this.C3.Name = "C3";
-            this.C3.Size = new System.Drawing.Size(73, 75);
+            this.C3.Size = new System.Drawing.Size(73, 72);
             this.C3.TabIndex = 8;
             this.C3.UseVisualStyleBackColor = true;
             this.C3.Click += new System.EventHandler(this.Mark);
@@ -137,18 +138,20 @@ namespace KolkoiKrzyzyk
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 297);
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(37, 289);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 15);
+            this.label1.Size = new System.Drawing.Size(110, 23);
             this.label1.TabIndex = 9;
             this.label1.Text = "Aktualny ruch:";
             // 
             // Currentlabel2
             // 
             this.Currentlabel2.AutoSize = true;
-            this.Currentlabel2.Location = new System.Drawing.Point(103, 297);
+            this.Currentlabel2.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Currentlabel2.Location = new System.Drawing.Point(140, 286);
             this.Currentlabel2.Name = "Currentlabel2";
-            this.Currentlabel2.Size = new System.Drawing.Size(10, 15);
+            this.Currentlabel2.Size = new System.Drawing.Size(16, 28);
             this.Currentlabel2.TabIndex = 11;
             this.Currentlabel2.Text = ".";
             // 
@@ -167,7 +170,7 @@ namespace KolkoiKrzyzyk
             this.tableLayoutPanel1.Controls.Add(this.C1, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.B1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.A1, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(22, 29);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(22, 37);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -184,11 +187,11 @@ namespace KolkoiKrzyzyk
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.Currentlabel2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(300, 360);
             this.MinimumSize = new System.Drawing.Size(300, 360);
             this.Name = "Form1";
-            this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kółko i Krzyżyk";

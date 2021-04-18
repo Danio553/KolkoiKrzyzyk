@@ -17,13 +17,14 @@ namespace KolkoiKrzyzyk
     }
     public partial class Form1 : Form
     {
+
         CurrentPlayer cp;
         public Form1()
         {
             InitializeComponent();
             cp = CurrentPlayer.Krzyzyk;
             changelabel();
-            A1.Enabled = true;
+          
         }
 
         private void Mark(object sender, EventArgs e)
@@ -104,7 +105,7 @@ namespace KolkoiKrzyzyk
                 wygrana.Wygrany = A3.Text;
                 wygrana.Show();
             }
-
+            
         }
         public void wyczyść()
         {
@@ -114,8 +115,12 @@ namespace KolkoiKrzyzyk
             {
                 if (buttons[i] is Button)
                     buttons[i].Text = "";
+                cp = CurrentPlayer.Krzyzyk;
+                Currentlabel2.Text = "Krzyżyk";
+              
             }
         }
+
 
 
     }
