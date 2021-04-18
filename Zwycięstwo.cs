@@ -12,19 +12,20 @@ namespace KolkoiKrzyzyk
     {
         public string Wygrany;
         private Form1 Plansza;
-        public Zwycięstwo(Form1 p)
+        public Zwycięstwo(Form1 P)
         {
-            
+            Plansza = P;
             InitializeComponent();
         }
 
         private void pokazZwyciezce(object sender, EventArgs e)
         {
+         
             wlabel2.Text = "Wygrywa : " + Wygrany;
         }
         public void button1_Click(object sender, EventArgs e)
         {
-           
+            Plansza.wyczyść();
             this.Close();
         }
 
@@ -34,3 +35,4 @@ namespace KolkoiKrzyzyk
         }
     }
 }
+

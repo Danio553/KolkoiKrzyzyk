@@ -23,6 +23,7 @@ namespace KolkoiKrzyzyk
             InitializeComponent();
             cp = CurrentPlayer.Krzyzyk;
             changelabel();
+            A1.Enabled = true;
         }
 
         private void Mark(object sender, EventArgs e)
@@ -107,11 +108,19 @@ namespace KolkoiKrzyzyk
         }
         public void wyczyść()
         {
+            TableLayoutControlCollection buttons = tableLayoutPanel1.Controls;
 
+            for(int i = 0; i < buttons.Count; i++)
+            {
+                if (buttons[i] is Button)
+                    buttons[i].Text = "";
             }
         }
+
+
     }
 }
+
 
 
 
